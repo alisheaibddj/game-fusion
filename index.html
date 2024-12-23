@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameFusion</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #fff;
+        }
+        header {
+            background-color: #1f1f1f;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #00bcd4;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        nav a:hover {
+            color: #00bcd4;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(135deg, #282828, #1f1f1f);
+        }
+        .hero h2 {
+            font-size: 36px;
+            color: #00bcd4;
+        }
+        .hero p {
+            font-size: 18px;
+            margin: 20px 0;
+        }
+        .sections {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+        .section {
+            background-color: #1f1f1f;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+        }
+        .section img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .section h3 {
+            font-size: 20px;
+            margin-top: 15px;
+            color: #00bcd4;
+        }
+        footer {
+            background-color: #1f1f1f;
+            padding: 10px;
+            text-align: center;
+            color: #888;
+        }
+        .shorts-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .short {
+            background-color: #1f1f1f;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .short video {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .upload-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .upload-btn {
+            background-color: #00bcd4;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .upload-btn:hover {
+            background-color: #0097a7;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>GameFusion</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Live Streams</a>
+            <a href="#">Games</a>
+            <a href="#">Shorts</a>
+            <a href="#">My Account</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h2>Welcome to GameFusion</h2>
+        <p>Unite with gamers, start live streaming, and share your gaming highlights.</p>
+    </div>
+
+    <div class="sections">
+        <div class="section">
+            <img src="https://via.placeholder.com/300x200" alt="Live Streaming">
+            <h3>Start Live Streaming</h3>
+        </div>
+        <div class="section">
+            <img src="https://via.placeholder.com/300x200" alt="Popular Games">
+            <h3>Explore Popular Games</h3>
+        </div>
+        <div class="section">
+            <img src="https://via.placeholder.com/300x200" alt="Upload Shorts">
+            <h3>Upload Gaming Shorts</h3>
+        </div>
+    </div>
+
+    <div class="upload-container">
+        <button class="upload-btn">Upload a Short</button>
+    </div>
+
+    <div class="shorts-gallery">
+        <div class="short">
+            <video src="short1.mp4" controls></video>
+            <p>Awesome Gameplay #1</p>
+        </div>
+        <div class="short">
+            <video src="short2.mp4" controls></video>
+            <p>Crazy Win Highlights</p>
+        </div>
+        <div class="short">
+            <video src="short3.mp4" controls></video>
+            <p>Epic Moment!</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 GameFusion. All rights reserved.</p>
+    </footer>
+</body>
+</html>
